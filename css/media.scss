@@ -1,0 +1,77 @@
+/* от 900 px */
+
+@media (max-width: 900px) {
+    .timer__block {
+        width: 100px;
+        font-size: 11px;
+         
+        .time {
+            font-size: 70px;
+            height: 100px;
+        }
+        
+    }
+   
+
+    
+}
+
+// от 620px
+@media (max-width: 620px) {
+.timer__block {
+        width: 80px;
+        font-size: 8px;
+         
+        .time {
+            font-size: 50px;
+            height: 80px;
+        }
+        
+    }
+
+    .buttons {
+        margin-top: 70px;
+
+        .button {
+            font-size: 14px;
+        }
+    }
+
+    .results__block {
+        font-size: 14px;
+        &-info {
+            font-size: 14px;
+        }
+    }
+}
+
+
+// от 440px 
+@media (max-width: 440px) {
+
+    .timer__block {
+            width: 60px;
+            font-size: 6px;
+             
+            .time {
+                font-size: 40px;
+                height: 70px;
+            }
+            
+        }
+         .buttons {
+        margin-top: 45px;
+
+        .button {
+            font-size: 10px;
+        }
+    }
+    .results__block {
+        font-size: 10px;
+        width: 150px;
+        &-info {
+            font-size: 10px;
+        }
+    }
+
+}

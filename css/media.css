@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* от 900 px */
+@media (max-width: 900px) {
+  .timer__block {
+    width: 100px;
+    font-size: 11px; }
+    .timer__block .time {
+      font-size: 70px;
+      height: 100px; } }
+@media (max-width: 620px) {
+  .timer__block {
+    width: 80px;
+    font-size: 8px; }
+    .timer__block .time {
+      font-size: 50px;
+      height: 80px; }
+
+  .buttons {
+    margin-top: 70px; }
+    .buttons .button {
+      font-size: 14px; }
+
+  .results__block {
+    font-size: 14px; }
+    .results__block-info {
+      font-size: 14px; } }
+@media (max-width: 440px) {
+  .timer__block {
+    width: 60px;
+    font-size: 6px; }
+    .timer__block .time {
+      font-size: 40px;
+      height: 70px; }
+
+  .buttons {
+    margin-top: 45px; }
+    .buttons .button {
+      font-size: 10px; }
+
+  .results__block {
+    font-size: 10px;
+    width: 150px; }
+    .results__block-info {
+      font-size: 10px; } }
+
+/*# sourceMappingURL=media.css.map */

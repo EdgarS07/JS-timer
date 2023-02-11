@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+
+// VAR COLOR
+$mainColor1: #2987be;
+$mainColor2: #1059b8;
+
+
+// GENERAL
+* {
+    font-family: 'Azeret Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    // padding: 0 15px;
+}
+
+
+// TIME
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    
+
+    &__block {
+        width: 150px;
+        // border-bottom-right-radius: 10px;
+        // border-bottom-left-radius: 10px;
+
+        
+        .time {
+            background-color: $mainColor1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            color: #fff;
+            font-size: 95px;
+            height: 150px;
+        }
+
+        .title {
+            background-color: $mainColor2;
+            padding: 5px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+
+
+// BUTTONS
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+
+
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    .button {
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in, top 0.2s ease-in;
+        &.start {
+                color: $mainColor1;
+            &:hover, &:focus {
+                background-color: $mainColor2;
+                color: #fff;
+                cursor: pointer;
+            }
+           
+             &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+        &.pause {
+                color: #000;
+            &:hover, &:focus {
+                background-color: rgba(255, 0, 183, 0.645);
+                color: #fff;
+                cursor: pointer;
+            }
+
+            &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+        &.stop {
+                color: $mainColor1;
+            &:hover, &:focus {
+                background-color: $mainColor2;
+                color: #fff;
+                cursor: pointer;
+            }
+             &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+        // &.result {
+        //     color: $mainColor1;
+        //      &:hover, &:focus {
+        //         background-color: $mainColor2;
+        //         color: #fff;
+        //         cursor: pointer;
+        //     }
+        //      &:active {
+        //         position: relative;
+        //         top: 1px;
+        //     }
+        // }
+        &.result {
+            &:disabled {
+                background-color: none;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+} 
+
+// RESULTS
+.results__block {
+position: absolute;
+bottom: 15px;
+left: 15px;
+
+width: 250px;
+border: 1px solid $mainColor1;
+
+color: $mainColor2;
+font-size: 18px;
+padding: 15px;
+
+&-info {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+}
+
+
+
+
+
+
